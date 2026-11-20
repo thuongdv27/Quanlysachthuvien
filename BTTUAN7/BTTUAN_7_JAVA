@@ -1,0 +1,17 @@
+public class  BTTUAN_07_SACH {
+    // Yêu cầu 1: Khai báo các thuộc tính của sách
+    String maSach;
+    String tieuDe;
+    String tacGia;
+    int namXuatBan;
+    int soLuong;
+
+    // Yêu cầu 2: Phương thức hiển thị chi tiết thông tin sách
+    public void hienThiThongTin() {
+        System.out.println("Ma sach: " + maSach 
+                         + " | Tieu de: " + tieuDe 
+                         + " | Tac gia: " + tacGia 
+                         + " | Nam XB: " + namXuatBan 
+                         + " | So luong: " + soLuong);
+    }
+}

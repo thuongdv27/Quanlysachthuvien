@@ -1,0 +1,33 @@
+import java.util.ArrayList;
+
+public class BTTUAN_7_TEST {
+    public static void main(String[] args) {
+        // Yêu cầu 4: Quản lý danh sách sách bằng ArrayList
+        ArrayList<BTTUAN_7_SACH> danhSachSach = new ArrayList<>();
+
+        // Yêu cầu 3: Tạo đối tượng từ lớp Sach
+        BTTUAN_07_SACH  sach1 = new BTTUAN_7_SACH();
+        sach1.maSach = "S01";
+        sach1.tieuDe = "Lap trinh Java co ban";
+        sach1.tacGia = "Nguyen Van A";
+        sach1.namXuatBan = 2025;
+        sach1.soLuong = 15;
+
+        BTTUAN_07_SACH sach2 = new BTTUAN_07_SACH   ();
+        sach2.maSach = "S02";
+        sach2.tieuDe = "Cau truc du lieu";
+        sach2.tacGia = "Tran Thi B";
+        sach2.namXuatBan = 2026;
+        sach2.soLuong = 30;
+
+        // Thêm đối tượng vào danh sách
+        danhSachSach.add(sach1);
+        danhSachSach.add(sach2);
+
+        // In toàn bộ danh sách ra màn hình
+        System.out.println("--- DANH SACH THU VIEN ---");
+        for (BTTUAN_07_SACH s : danhSachSach) {
+            s.hienThiThongTin();
+        }
+    }
+}
